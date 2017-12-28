@@ -1,60 +1,133 @@
-<?php
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>project0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="サイト説明">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
 
-/**
- * Laravel - A PHP Framework For Web Artisans
- *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
- */
+</head>
 
-define('LARAVEL_START', microtime(true));
+<body>
 
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels great to relax.
-|
-*/
+<div id="head">
 
-require __DIR__.'/../vendor/autoload.php';
+<header>
+<div class="inner">
+<h1 id="logo"><a href="#"><img src="images/logo.png" alt="Sample"></a></h1>
+<div id="contact">
+<p class="tel">ログイン関係</p>
+<p class="form"><a>ログインボタン</a></p>
+</div>
+</div>
+</header>
 
-/*
-|--------------------------------------------------------------------------
-| Turn On The Lights
-|--------------------------------------------------------------------------
-|
-| We need to illuminate PHP development, so let us turn on the lights.
-| This bootstraps the framework and gets it ready for use, then it
-| will load up this application so that we can run it and send
-| the responses back to the browser and delight our users.
-|
-*/
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<ul>
+<li><a href="#">ホーム<span>HOME</span></a></li>
+<li><a href="11.html">タブ１<span>tab1</span></a></li>
+<li><a href="22.html">タブ２<span>tab2</span></a></li>
+<li><a href="33.html">タブ３<span>tab3</span></a></li>
+</ul>
+</nav>
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="#">ホーム<span>HOME</span></a></li>
+<li><a href="11.html">タブ１<span>tab1</span></a></li>
+<li><a href="22.html">タブ２<span>tab2T</span></a></li>
+<li><a href="33.html">タブ３<span>tab3</span></a></li>
+</ul>
+</nav>
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+</div>
+<!--/head-->
 
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
+<div id="contents">
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+<div id="contents-inner">
 
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
+<div id="main">
 
-$response->send();
+<section>
 
-$kernel->terminate($request, $response);
+<h2>タブ名</h2>
+
+<h3>サブタイ</h3>
+<p>内容</p>
+
+<h3>サブタイ</h3>
+<p>内容</p>
+
+</section>
+
+</div>
+<!--/main-->
+
+<div id="sub">
+
+<nav class="box1">
+<h2>ログインカウンター予定</h2>
+<p><script language="JavaScript" type="text/javascript">
+ <!--
+//桁数を入力
+posNum = 7;
+
+ document.write('<img src="cts/counter_s.php?pos=0" width="0" height="0">');
+ for(i=posNum; i>0; i--){
+ document.write('<img src="cts/counter_s.php?pos=' + i + '">');
+ }
+ -->
+ </script></p>
+</nav>
+
+<section class="box1">
+<h2>プロフ予定</h2>
+<p>内容</p>
+<p class="form"><a href="ゆーあーるえる">リンクボタン？</a></p>
+</section>
+
+<section class="box1">
+<h2>更新履歴？</h2>
+<p>内容。</p>
+</section>
+<!--/box1-->
+
+
+
+</div>
+<!--/sub-->
+
+</div>
+<!--/contents-inner-->
+
+</div>
+
+<p id="pagetop"><a href="#">↑</a></p>
+
+</div>
+<!--/contents-->
+
+<footer>
+<div id="footermenu">
+<ul>
+<li><a href="#">未定</a></li>
+</ul>
+<ul>
+<li><a href="#">未定</a></li>
+</ul>
+</div>
+<!--/footermenu-->
+
+<div id="copyright">
+<span class="pr"><a>Web Design:Template-Party</a></span>
+</div>
+
+</footer>
+
+</body>
+</html>
