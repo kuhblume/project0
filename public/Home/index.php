@@ -77,9 +77,9 @@
 //桁数を入力
 posNum = 7;
 
- document.write('<img src="cts/counter_s.php?pos=0" width="0" height="0">');
+ document.write('<img src="../cts/counter_s.php?pos=0" width="0" height="0">');
  for(i=posNum; i>0; i--){
- document.write('<img src="cts/counter_s.php?pos=' + i + '">');
+ document.write('<img src="../cts/counter_s.php?pos=' + i + '">');
  }
  -->
  </script></p>
