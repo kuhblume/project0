@@ -13,7 +13,7 @@ body {
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 14px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
-	background: blue;	/*背景色*/
+	background: #c4dff0;	/*背景色*/
 	-webkit-text-size-adjust: none;
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
@@ -63,9 +63,9 @@ header #logo {
 	width: 350px;	/*ブロック幅*/
 	border-radius: 6px;	/*角丸のサイズ*/
 	padding: 6px;		/*ボックス内の余白*/
-	border: 1px solid #085a1f;	/*枠線の幅、線種、色*/
+	border: 2px solid #3ea0dc;	/*枠線の幅、線種、色*/
 	background: #fff;	/*背景色*/
-	color: #085a1f;	/*文字色*/
+	color: #333;	/*文字色*/
 	text-align: center;	/*文字をセンタリング*/
 }
 /*TEL*/
@@ -89,10 +89,10 @@ header #logo {
 .form a {
 	display: block;
 	text-decoration: none;
-	color: #fff;	/*背景色*/
-	border: 1px solid #085a1f;	/*枠線の幅、線種、色*/
+	color: #333;	/*背景色*/
+	border: 2px solid #3ea0dc;	/*枠線の幅、線種、色*/
 	border-radius: 4px;		/*角丸のサイズ*/
-	background: #085a1f;	/*背景色*/
+	background: #fff;	/*背景色*/
 }
 .form a:hover {
 	/*background: #fff;	マウスオン時の背景色*/
@@ -106,10 +106,10 @@ header #logo {
 #menubar-s {
 	clear: both;
 	overflow: hidden;
-	background: #085a1f;	/*背景色*/
+	background: #3ea0dc;	/*背景色*/
 	border-top: 1px solid #fff;		/*上の線の幅、線種、色*/
 	border-bottom: 1px solid #fff;	/*下の線の幅、線種、色*/
-	outline: 5px solid #085a1f;		/*アウトライン。上の２行で設定しているラインの外側の線。*/
+	outline: 5px solid #3ea0dc;		/*アウトライン。上の２行で設定しているラインの外側の線。*/
 	padding: 6px 0px;	/*上下、左右へのボックス内の余白*/
 }
 #menubar ul {
@@ -200,11 +200,13 @@ header #logo {
 }
 /*mainコンテンツのh2タグの設定*/
 #main h2 {
+	font-size: 20px;	/*文字サイズ*/
 	clear: both;
-	margin-bottom: 15px;
+	margin: 8px 0px 12px;
 	color: #FFF;		/*文字色*/
-	padding: 5px 15px;	/*上下、左右への余白*/
-	background: #085a1f;	/*背景色*/
+	padding: 3px 15px 1px;	/*上下、左右への余白*/
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	background: #3ea0dc;	/*背景色*/
 }
 /*mainコンテンツのh2タグの１文字目への設定*/
 #main h2::first-letter {
@@ -214,7 +216,7 @@ header #logo {
 /*mainコンテンツのh3タグの設定*/
 #main h3 {
 	clear: both;
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 	padding: 3px 15px;	/*上下、左右への余白*/
 	color: #000;		/*文字色*/
 	background: #fff;	/*背景色（古いブラウザ用）*/
@@ -222,20 +224,22 @@ header #logo {
 }
 /*mainコンテンツのh3タグの１文字目への設定*/
 #main h3::first-letter {
-	border-left: 3px solid #085a1f;	/*左側のアクセント用ラインの幅、線種、色*/
+	border-left: 3px solid #3ea0dc;	/*左側のアクセント用ラインの幅、線種、色*/
 	padding-left: 10px;	/*アクセントラインと文字の間にとる余白*/
 }
 /*mainコンテンツの段落タグ設定*/
 #main p {
-	padding: 7px 15px 14px;	/*上、左右、下への余白*/
+	padding: 7px 15px 5px;	/*上、左右、下への余白*/
 }
 #main p + p {
 	padding-top: 0px;
 }
 #main h2 + p,
-#main h3 + p {
-	padding-top: 0px;
-	margin-top: -5px;
+#main h3 + p {		/*サブタイ以下の内容*/
+	background: #fff;
+	padding-top: 5px;
+	margin-top: -15px;
+	margin-bottom: 15px;
 }
 
 /*各ブロック
@@ -409,7 +413,7 @@ header #logo {
 /*sub,sideコンテンツのh2タグの１文字目への設定*/
 #sub h2::first-letter,
 #side h2::first-letter{
-	border-left: 3px solid #085a1f;	/*左側のアクセント用ラインの幅、線種、色*/
+	border-left: 3px solid #3ea0dc;	/*左側のアクセント用ラインの幅、線種、色*/
 	padding-left: 10px;	/*アクセントラインと文字の間にとる余白*/
 }
 /*sub,sideコンテンツ内のpタグ設定*/
@@ -503,7 +507,7 @@ header #logo {
 ---------------------------------------------------------------------------*/
 footer {
 	clear: both;
-	background: #085a1f;	/*背景色*/
+	background: #3ea0dc;	/*背景色*/
 	color: #fff;	/*文字色*/
 	font-size: 85%;	/*文字サイズ*/
 }
@@ -607,7 +611,7 @@ footer .pr {
 #pagetop a {
 	color: #FFF;		/*文字色*/
 	font-size: 20px;	/*文字サイズ*/
-	background: #085a1f;	/*背景色*/
+	background: #3ea0dc;	/*背景色*/
 	text-decoration: none;
 	text-align: center;
 	display: block;
@@ -736,6 +740,7 @@ header #logo {
 #menubar-s {
 	display: block;
 	margin-top: 8px;
+	padding-left: 0px;
 }
 /*PC用メニューを非表示にする*/
 #menubar {
@@ -824,6 +829,7 @@ body.s-n #sub,body.s-n #side,body.s-n #footermenu {display: none;}
 /*メニュー１個あたりの設定*/
 #menubar-s li {
 	width: 48%;		/*幅*/
+	margin-left: 0.9%; 
 }
 
 }

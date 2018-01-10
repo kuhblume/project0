@@ -28,19 +28,19 @@
 <!--PC用（801px以上端末）メニュー-->
 <nav id="menubar">
 <ul>
-<li><a href="#">ホーム<span>HOME</span></a></li>
-<li><a href="11.html">タブ１<span>tab1</span></a></li>
-<li><a href="22.html">タブ２<span>tab2</span></a></li>
-<li><a href="33.html">タブ３<span>tab3</span></a></li>
+<li><a href="Home">ホーム<span>Home</span></a></li>
+<li><a href="Instructions">各筐体説明<span>Instructions</span></a></li>
+<li><a href="News">最新情報<span>News</span></a></li>
+<li><a href="About">サイト概要<span>About</span></a></li>
 </ul>
 </nav>
 <!--小さな端末用（800px以下端末）メニュー-->
 <nav id="menubar-s">
 <ul>
-<li><a href="#">ホーム<span>HOME</span></a></li>
-<li><a href="11.html">タブ１<span>tab1</span></a></li>
-<li><a href="22.html">タブ２<span>tab2T</span></a></li>
-<li><a href="33.html">タブ３<span>tab3</span></a></li>
+<li><a href="Home">ホーム<span>Home</span></a></li>
+<li><a href="Instructions">各筐体説明<span>Instructions</span></a></li>
+<li><a href="News">最新情報<span>News</span></a></li>
+<li><a href="About">サイト概要<span>About</span></a></li>
 </ul>
 </nav>
 
@@ -55,7 +55,7 @@
 
 <section>
 
-<h2>タブ名</h2>
+<h2>検索</h2>
 
 <h3>サブタイ</h3>
 <p>内容</p>
