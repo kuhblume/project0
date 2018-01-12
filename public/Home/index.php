@@ -28,19 +28,19 @@
 <!--PC用（801px以上端末）メニュー-->
 <nav id="menubar">
 <ul>
-<li><a href="Home">ホーム<span>Home</span></a></li>
-<li><a href="Instructions">各筐体説明<span>Instructions</span></a></li>
-<li><a href="News">最新情報<span>News</span></a></li>
-<li><a href="About">サイト概要<span>About</span></a></li>
+<li><a href="../Home">ホーム<span>Home</span></a></li>
+<li><a href="../Instructions">各筐体説明<span>Instructions</span></a></li>
+<li><a href="../News">最新情報<span>News</span></a></li>
+<li><a href="../About">サイト概要<span>About</span></a></li>
 </ul>
 </nav>
 <!--小さな端末用（800px以下端末）メニュー-->
 <nav id="menubar-s">
 <ul>
-<li><a href="Home">ホーム<span>Home</span></a></li>
-<li><a href="Instructions">各筐体説明<span>Instructions</span></a></li>
-<li><a href="News">最新情報<span>News</span></a></li>
-<li><a href="About">サイト概要<span>About</span></a></li>
+<li><a href="../Home">ホーム<span>Home</span></a></li>
+<li><a href="../Instructions">各筐体説明<span>Instructions</span></a></li>
+<li><a href="../News">最新情報<span>News</span></a></li>
+<li><a href="../About">サイト概要<span>About</span></a></li>
 </ul>
 </nav>
 
