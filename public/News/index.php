@@ -125,7 +125,7 @@ posNum = 7;
 <!--/footermenu-->
 
 <div id="copyright">
-<span class="pr"><a>Web Design:Template-Party</a></span>
+<span class="pr"><a>pre</a></span>
 </div>
 
 </footer>
