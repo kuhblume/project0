@@ -235,9 +235,11 @@ header #logo {
 	padding-top: 0px;
 }
 #main h2 + p,
+#main h3 + h5,
 #main h3 + p {		/*サブタイ以下の内容*/
 	background: #fff;
 	padding-top: 5px;
+	padding-left: 6px;
 	margin-top: -15px;
 	margin-bottom: 15px;
 }
@@ -829,7 +831,7 @@ body.s-n #sub,body.s-n #side,body.s-n #footermenu {display: none;}
 /*メニュー１個あたりの設定*/
 #menubar-s li {
 	width: 48%;		/*幅*/
-	margin-left: 0.9%; 
+	margin-left: 0.5%; 
 }
 
 }

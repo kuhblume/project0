@@ -17,10 +17,10 @@
 
 <header>
 <div class="inner">
-<h1 id="logo"><a href="#"><img src="images/logo.png" alt="Sample"></a></h1>
+<h1 id="logo"><a href="Home"><img src="images/logo.png" alt="Sample"></a></h1>
 <div id="contact">
 <p class="tel">ログイン関係</p>
-<p class="form"><a>ログインボタン</a></p>
+<p class="form"><a href="ログインurl">ログインボタン</a></p>
 </div>
 </div>
 </header>
@@ -71,7 +71,7 @@
 <div id="sub">
 
 <nav class="box1">
-<h2>ログインカウンター予定</h2>
+<h2>アクセスカウンター</h2>
 <p><script language="JavaScript" type="text/javascript">
  <!--
 //桁数を入力
@@ -92,8 +92,9 @@ posNum = 7;
 </section>
 
 <section class="box1">
-<h2>更新履歴？</h2>
-<p>内容。</p>
+<h2>更新履歴</h2>
+<p><iframe src="../log.html">
+ インラインフレーム対応ブラウザでご覧いただけます。</iframe></p>
 </section>
 <!--/box1-->
 

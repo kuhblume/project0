@@ -17,10 +17,10 @@
 
 <header>
 <div class="inner">
-<h1 id="logo"><a href="#"><img src="images/logo.png" alt="Sample"></a></h1>
+<h1 id="logo"><a href="Home"><img src="images/logo.png" alt="Sample"></a></h1>
 <div id="contact">
 <p class="tel">ログイン関係</p>
-<p class="form"><a>ログインボタン</a></p>
+<p class="form"><a href="ログインurl">ログインボタン</a></p>
 </div>
 </div>
 </header>
@@ -57,11 +57,112 @@
 
 <h2>検索</h2>
 
-<h3>サブタイ</h3>
-<p>内容</p>
+<h3>条件指定</h3>
+<h5>
+<form name="form" >
+	<label>
+		<input type="checkbox" name="test" value="TEST1" onClick="DisChecked();" />chunithm
+	</label>
+	<label>
+		<input type="checkbox" name="test" value="TEST2" onClick="DisChecked();" />maimai
+	</label>
+	<label>
+	<input type="checkbox" name="all" onClick="AllChecked();" />全て選択/解除
+	</label>
+</form>
 
-<h3>サブタイ</h3>
-<p>内容</p>
+<script language="JavaScript" type="text/javascript">
+<!--
+// 「全て選択」チェックで全てにチェック付く
+function AllChecked(){
+	var all = document.form.all.checked;
+	for (var i=0; i<document.form.test.length; i++){
+		document.form.test[i].checked = all;
+		}
+	}
+// 一つでもチェックを外すと「全て選択」のチェック外れる
+function DisChecked(){
+	var checks = document.form.test;
+	var checksCount = 0;
+	for (var i=0; i<checks.length; i++){
+		if(checks[i].checked == false){
+			document.form.all.checked = false;
+		}else{
+			checksCount += 1;
+			if(checksCount == checks.length){
+				document.form.all.checked = true;
+					}
+				}
+			}
+		}
+// -->
+</script>
+</select>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// 「全て選択」チェックで全てにチェック付く
+function AllChecked(){
+	var all = document.form.all.checked;
+	for (var i=0; i<document.form.test.length; i++){
+		document.form.test[i].checked = all;
+		}
+	}
+// 一つでもチェックを外すと「全て選択」のチェック外れる
+function DisChecked(){
+	var checks = document.form.test;
+	var checksCount = 0;
+	for (var i=0; i<checks.length; i++){
+		if(checks[i].checked == false){
+			document.form.all.checked = false;
+		}else{
+			checksCount += 1;
+			if(checksCount == checks.length){
+				document.form.all.checked = true;
+					}
+				}
+			}
+		}
+// -->
+</script></select>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// 「全て選択」チェックで全てにチェック付く
+function AllChecked(){
+	var all = document.form.all.checked;
+	for (var i=0; i<document.form.test.length; i++){
+		document.form.test[i].checked = all;
+		}
+	}
+// 一つでもチェックを外すと「全て選択」のチェック外れる
+function DisChecked(){
+	var checks = document.form.test;
+	var checksCount = 0;
+	for (var i=0; i<checks.length; i++){
+		if(checks[i].checked == false){
+			document.form.all.checked = false;
+		}else{
+			checksCount += 1;
+			if(checksCount == checks.length){
+				document.form.all.checked = true;
+					}
+				}
+			}
+		}
+// -->
+</script>
+<select name="pref" id="pref">
+<?php
+$prefs = array('都道府県を選択','茨城県','千葉県','東京都');
+foreach($prefs as $pref) {
+	print('<option value="' . $pref . '">' . $pref . '</option>');
+}
+?>
+</select>
+</h5>
+<h3>検索結果</h3>
+<p>aaaaaaa</p>
 
 </section>
 
@@ -71,7 +172,7 @@
 <div id="sub">
 
 <nav class="box1">
-<h2>ログインカウンター予定</h2>
+<h2>アクセスカウンター</h2>
 <p><script language="JavaScript" type="text/javascript">
  <!--
 //桁数を入力
@@ -92,8 +193,9 @@ posNum = 7;
 </section>
 
 <section class="box1">
-<h2>更新履歴？</h2>
-<p>内容。</p>
+<h2>更新履歴</h2>
+<p><iframe src="../log.html">
+ インラインフレーム対応ブラウザでご覧いただけます。</iframe></p>
 </section>
 <!--/box1-->
 
