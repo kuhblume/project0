@@ -15,8 +15,10 @@ class ShopsController extends Controller
  
     public function getIndex()
     {
+    	
         $shops = $this->shop->all();
         return view('shop.index', compact('shops'));
     }
 
 }
+
